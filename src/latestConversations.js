@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-const API_BASE_URL = "https://example.com/api"; // api address removed
+const API_BASE_URL = "https://example.com/api"; // the 'real' API URL is removed
 
 class DataLoader {
   constructor({ maxConcurrentRequests = 10, requestIntervalMs = 100 } = {}) {

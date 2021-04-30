@@ -2,11 +2,11 @@
 
 ## Overview
 
-This task was sent as a "take home task" for a developer position at a software company.
+This task is a take home coding challenge for a developer position at a software company.
 
-The problem is to convert conversations, messages and user data coming from several API endpoints into a list of the most recent messages.
+The problem is to convert conversations, messages and user data from several API endpoints into a list of the most recent messages.
 
-The real API URLs has been removed, so the only way to run the code is with mocked API endpoints in the tests.
+The real API URLs has been removed, so the only way to run the code is with mocked API endpoints through the tests.
 
 In order to setup and run the application do the following:
 
@@ -15,7 +15,7 @@ In order to setup and run the application do the following:
 
 This installs the third-party dependencies as well as runs the tests.
 
-## Code walk-through
+## Application walk-through
 
 The solution can be found in `./src/latestConversations.js` and tests can be found in `./src/__tests__/latestConversations.test.js`.
 
@@ -23,9 +23,9 @@ We are using a 'DataLoader' to handle the REST API calls, in this case only GET 
 
 Each set of endpoints are handled by two classes, Conversation and User, and the API calls related to these are found under each class.
 
-The logic to group the conversation, message and user information is then handled in the `getRecentConversationSummaries` function. It is a multi-step process that fetches and transforms the data into the expected format.
+The logic to group conversations, messages and user information is then handled in the `getRecentConversationSummaries` function. It is a multi-step process that fetches and transforms the data into the expected format.
 
-For more information about the task see the next section that describes it in more detail.
+For more information about the task, see the next section that that contains the original task description.
 
 ## Original task description
 
@@ -56,7 +56,7 @@ For more information about the task see the next section that describes it in mo
 * }
 *
 */
-const API_BASE_URL = "https://example.com/api";
+const API_BASE_URL = "https://example.com/api"; // the 'real' API URL is removed
 
 async function getRecentConversationSummaries () {
   // TODO: Implement this
