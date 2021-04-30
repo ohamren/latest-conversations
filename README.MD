@@ -1,4 +1,4 @@
-# Take Home Task - Latest Conversations
+# Take Home Coding Challenge - Latest Conversations
 
 ## Overview
 
