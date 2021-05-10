@@ -59,10 +59,8 @@ class DataLoader {
   }
 }
 
-class Conversation extends DataLoader {
-  constructor() {
-    super();
-  }
+class Conversation {
+  constructor() {}
 
   async getConversations() {
     const data = await dataLoader.get(`${API_BASE_URL}/conversations`);
@@ -78,10 +76,8 @@ class Conversation extends DataLoader {
   }
 }
 
-class User extends DataLoader {
-  constructor() {
-    super();
-  }
+class User {
+  constructor() {}
 
   async getUsers(ids) {
     const urls = ids.map((id) => `${API_BASE_URL}/users/${id}`);
